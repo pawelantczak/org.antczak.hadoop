@@ -21,6 +21,7 @@
 
     <modules>
         <module>mapreduce</module>
+        <module>mapreduce-wordcount</module>
     </modules>
 
     <dependencies>
