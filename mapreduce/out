@@ -1,0 +1,1030 @@
+20:34:27,013  INFO t.support.ClassPathXmlApplicationContext: 513 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dfca052: startup date [Wed Aug 06 20:34:27 CEST 2014]; root of context hierarchy
+20:34:27,076 DEBUG ngframework.core.env.StandardEnvironment: 110 - Adding [systemProperties] PropertySource with lowest search precedence
+20:34:27,079 DEBUG ngframework.core.env.StandardEnvironment: 110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+20:34:27,080 DEBUG ngframework.core.env.StandardEnvironment: 126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+20:34:27,121 DEBUG ngframework.core.env.StandardEnvironment: 110 - Adding [systemProperties] PropertySource with lowest search precedence
+20:34:27,121 DEBUG ngframework.core.env.StandardEnvironment: 110 - Adding [systemEnvironment] PropertySource with lowest search precedence
+20:34:27,121 DEBUG ngframework.core.env.StandardEnvironment: 126 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+20:34:27,128  INFO eans.factory.xml.XmlBeanDefinitionReader: 316 - Loading XML bean definitions from class path resource [application-context.xml]
+20:34:27,145 DEBUG .beans.factory.xml.DefaultDocumentLoader:  73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+20:34:27,173 DEBUG eans.factory.xml.PluggableSchemaResolver: 141 - Loading schema mappings from [META-INF/spring.schemas]
+20:34:27,177 DEBUG eans.factory.xml.PluggableSchemaResolver: 147 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/hadoop/spring-hadoop.xsd=/org/springframework/data/hadoop/config/spring-hadoop-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/batch/spring-batch-2.2.xsd=/org/springframework/batch/core/configuration/xml/spring-batch-2.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://xmlns.jcp.org/xml/ns/javaee/batchXML_1_0.xsd=/org/springframework/batch/core/jsr/configuration/xml/batchXML_1_0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/batch/spring-batch-2.1.xsd=/org/springframework/batch/core/configuration/xml/spring-batch-2.1.xsd, http://xmlns.jcp.org/xml/ns/javaee/jobXML_1_0.xsd=/org/springframework/batch/core/jsr/configuration/xml/jobXML_1_0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/hadoop/spring-hadoop-0.9.xsd=/org/springframework/data/hadoop/config/spring-hadoop-0.9.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/batch/spring-batch-3.0.xsd=/org/springframework/batch/core/configuration/xml/spring-batch-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/batch/spring-batch-2.0.xsd=/org/springframework/batch/core/configuration/xml/spring-batch-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/batch/spring-batch.xsd=/org/springframework/batch/core/configuration/xml/spring-batch-2.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/hadoop/spring-hadoop-2.0.xsd=/org/springframework/data/hadoop/config/spring-hadoop-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/hadoop/spring-hadoop-1.0.xsd=/org/springframework/data/hadoop/config/spring-hadoop-1.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd}
+20:34:27,179 DEBUG eans.factory.xml.PluggableSchemaResolver: 119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+20:34:27,218 DEBUG eans.factory.xml.PluggableSchemaResolver: 119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+20:34:27,228 DEBUG eans.factory.xml.PluggableSchemaResolver: 119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.0.xsd
+20:34:27,235 DEBUG eans.factory.xml.PluggableSchemaResolver: 119 - Found XML schema [http://www.springframework.org/schema/hadoop/spring-hadoop.xsd] in classpath: /org/springframework/data/hadoop/config/spring-hadoop-2.0.xsd
+20:34:27,279 DEBUG .xml.DefaultBeanDefinitionDocumentReader: 108 - Loading bean definitions
+20:34:27,291 DEBUG tory.xml.DefaultNamespaceHandlerResolver: 157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://xmlns.jcp.org/xml/ns/javaee=org.springframework.batch.core.jsr.configuration.xml.JsrNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/batch=org.springframework.batch.core.configuration.xml.CoreNamespaceHandler, http://www.springframework.org/schema/hadoop=org.springframework.data.hadoop.config.HadoopNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+20:34:27,354 DEBUG t.support.ClassPathXmlApplicationContext: 543 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@5dfca052: org.springframework.beans.factory.support.DefaultListableBeanFactory@3b201837: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,hadoopConfiguration,wordcountJob,setupScript,runner]; root of factory hierarchy
+20:34:27,369 DEBUG ctory.support.DefaultListableBeanFactory: 220 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+20:34:27,369 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+20:34:27,382 DEBUG ctory.support.DefaultListableBeanFactory: 523 - Eagerly caching bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0' to allow for resolving potential circular references
+20:34:27,409 DEBUG ctory.support.DefaultListableBeanFactory: 477 - Finished creating instance of bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+20:34:27,409 DEBUG ramework.core.env.MutablePropertySources: 110 - Adding [environmentProperties] PropertySource with lowest search precedence
+20:34:27,409  INFO ort.PropertySourcesPlaceholderConfigurer: 172 - Loading properties file from class path resource [hadoop.properties]
+20:34:27,410 DEBUG ramework.core.env.MutablePropertySources: 110 - Adding [localProperties] PropertySource with lowest search precedence
+20:34:27,411 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.fs' in [environmentProperties]
+20:34:27,412 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.fs' in [systemProperties]
+20:34:27,412 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.fs' in [systemEnvironment]
+20:34:27,412 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'hd.fs' in any property source. Returning [null]
+20:34:27,413 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.fs' in [localProperties]
+20:34:27,413 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'hd.fs' in [localProperties] with type [String] and value 'hdfs://sandbox.hortonworks.com:8020'
+20:34:27,414 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.jt' in [environmentProperties]
+20:34:27,414 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.jt' in [systemProperties]
+20:34:27,415 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.jt' in [systemEnvironment]
+20:34:27,415 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'hd.jt' in any property source. Returning [null]
+20:34:27,415 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.jt' in [localProperties]
+20:34:27,415 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'hd.jt' in [localProperties] with type [String] and value 'sandbox.hortonworks.com:8021'
+20:34:27,415 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.rm' in [environmentProperties]
+20:34:27,416 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.rm' in [systemProperties]
+20:34:27,416 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.rm' in [systemEnvironment]
+20:34:27,416 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'hd.rm' in any property source. Returning [null]
+20:34:27,416 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'hd.rm' in [localProperties]
+20:34:27,416 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'hd.rm' in [localProperties] with type [String] and value 'sandbox.hortonworks.com:8050'
+20:34:27,417 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'mr.fw' in [environmentProperties]
+20:34:27,417 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'mr.fw' in [systemProperties]
+20:34:27,417 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'mr.fw' in [systemProperties] with type [String] and value 'yarn'
+20:34:27,417 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'mr.fw' in [environmentProperties] with type [String] and value 'yarn'
+20:34:27,417 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'mr.jh' in [environmentProperties]
+20:34:27,418 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'mr.jh' in [systemProperties]
+20:34:27,418 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'mr.jh' in [systemEnvironment]
+20:34:27,418 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'mr.jh' in any property source. Returning [null]
+20:34:27,418 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'mr.jh' in [localProperties]
+20:34:27,418 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'mr.jh' in [localProperties] with type [String] and value 'sandbox.hortonworks.com:10020'
+20:34:27,419 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [environmentProperties]
+20:34:27,419 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [systemProperties]
+20:34:27,419 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [systemEnvironment]
+20:34:27,419 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'wordcount.input.path' in any property source. Returning [null]
+20:34:27,420 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [localProperties]
+20:34:27,420 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'wordcount.input.path' in [localProperties] with type [String] and value '/user/krr/input/word/'
+20:34:27,420 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [environmentProperties]
+20:34:27,420 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [systemProperties]
+20:34:27,420 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [systemEnvironment]
+20:34:27,421 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'wordcount.output.path' in any property source. Returning [null]
+20:34:27,421 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [localProperties]
+20:34:27,421 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'wordcount.output.path' in [localProperties] with type [String] and value '/user/krr/output/word/'
+20:34:27,421 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'app.repo' in [environmentProperties]
+20:34:27,421 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'app.repo' in [systemProperties]
+20:34:27,421 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'app.repo' in [systemProperties] with type [String] and value '/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler/repo'
+20:34:27,422 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'app.repo' in [environmentProperties] with type [String] and value '/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler/repo'
+20:34:27,422 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'basedir' in [environmentProperties]
+20:34:27,422 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'basedir' in [systemProperties]
+20:34:27,422 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'basedir' in [systemProperties] with type [String] and value '/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler'
+20:34:27,422 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'basedir' in [environmentProperties] with type [String] and value '/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler'
+20:34:27,423 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'localSourceFile' in [environmentProperties]
+20:34:27,423 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'localSourceFile' in [systemProperties]
+20:34:27,423 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'localSourceFile' in [systemEnvironment]
+20:34:27,423 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'localSourceFile' in any property source. Returning [null]
+20:34:27,423 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'localSourceFile' in [localProperties]
+20:34:27,423 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'localSourceFile' in [localProperties] with type [String] and value 'data/nietzsche-chapter-1.txt'
+20:34:27,424 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [environmentProperties]
+20:34:27,424 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [systemProperties]
+20:34:27,424 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [systemEnvironment]
+20:34:27,424 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'wordcount.input.path' in any property source. Returning [null]
+20:34:27,424 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.input.path' in [localProperties]
+20:34:27,425 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'wordcount.input.path' in [localProperties] with type [String] and value '/user/krr/input/word/'
+20:34:27,425 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [environmentProperties]
+20:34:27,425 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [systemProperties]
+20:34:27,425 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [systemEnvironment]
+20:34:27,426 DEBUG core.env.PropertySourcesPropertyResolver: 103 - Could not find key 'wordcount.output.path' in any property source. Returning [null]
+20:34:27,426 DEBUG core.env.PropertySourcesPropertyResolver:  81 - Searching for key 'wordcount.output.path' in [localProperties]
+20:34:27,426 DEBUG core.env.PropertySourcesPropertyResolver:  90 - Found key 'wordcount.output.path' in [localProperties] with type [String] and value '/user/krr/output/word/'
+20:34:27,429 DEBUG t.support.ClassPathXmlApplicationContext: 649 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@41a16e2f]
+20:34:27,432 DEBUG t.support.ClassPathXmlApplicationContext: 673 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@76f90793]
+20:34:27,436 DEBUG ctory.support.DefaultListableBeanFactory: 672 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b201837: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,hadoopConfiguration,wordcountJob,setupScript,runner]; root of factory hierarchy
+20:34:27,436 DEBUG ctory.support.DefaultListableBeanFactory: 247 - Returning cached instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+20:34:27,436 DEBUG ctory.support.DefaultListableBeanFactory: 220 - Creating shared instance of singleton bean 'hadoopConfiguration'
+20:34:27,437 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean 'hadoopConfiguration'
+20:34:27,437 DEBUG ctory.support.DefaultListableBeanFactory: 523 - Eagerly caching bean 'hadoopConfiguration' to allow for resolving potential circular references
+20:34:27,459 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean '(inner bean)#522a533e'
+20:34:27,467 DEBUG ctory.support.DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name '(inner bean)#522a533e'
+20:34:27,467 DEBUG ctory.support.DefaultListableBeanFactory: 477 - Finished creating instance of bean '(inner bean)#522a533e'
+20:34:27,468 DEBUG ctory.support.DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'hadoopConfiguration'
+20:34:27,547  INFO he.hadoop.conf.Configuration.deprecation:1009 - fs.default.name is deprecated. Instead, use fs.defaultFS
+20:34:27,547 DEBUG ctory.support.DefaultListableBeanFactory: 477 - Finished creating instance of bean 'hadoopConfiguration'
+20:34:27,547 DEBUG ctory.support.DefaultListableBeanFactory: 220 - Creating shared instance of singleton bean 'wordcountJob'
+20:34:27,547 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean 'wordcountJob'
+20:34:27,548 DEBUG ctory.support.DefaultListableBeanFactory: 523 - Eagerly caching bean 'wordcountJob' to allow for resolving potential circular references
+20:34:27,548 DEBUG ctory.support.DefaultListableBeanFactory: 247 - Returning cached instance of singleton bean 'hadoopConfiguration'
+20:34:27,565 DEBUG port.PathMatchingResourcePatternResolver: 556 - Looking for matching resources in directory tree [/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler/repo]
+20:34:27,565 DEBUG port.PathMatchingResourcePatternResolver: 618 - Searching directory [/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler/repo] for files matching pattern [/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler/repo/hadoop-examples-*.jar]
+20:34:27,572 DEBUG port.PathMatchingResourcePatternResolver: 357 - Resolved location pattern [file:/home/krr/ProjektyJEE/org.antczak.hadoop/mapreduce/target/appassembler/repo/hadoop-examples-*.jar] to resources []
+20:34:27,573 DEBUG ctory.support.DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'wordcountJob'
+20:34:27,672  INFO he.hadoop.conf.Configuration.deprecation:1009 - mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+20:34:27,686 DEBUG             org.apache.hadoop.util.Shell: 283 - Failed to detect a valid hadoop home directory
+java.io.IOException: HADOOP_HOME or hadoop.home.dir are not set.
+	at org.apache.hadoop.util.Shell.checkHadoopHome(Shell.java:265)
+	at org.apache.hadoop.util.Shell.<clinit>(Shell.java:290)
+	at org.apache.hadoop.util.GenericOptionsParser.preProcessForWindows(GenericOptionsParser.java:432)
+	at org.apache.hadoop.util.GenericOptionsParser.parseGeneralOptions(GenericOptionsParser.java:478)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:170)
+	at org.apache.hadoop.util.GenericOptionsParser.<init>(GenericOptionsParser.java:153)
+	at org.springframework.data.hadoop.configuration.ConfigurationUtils.addResource(ConfigurationUtils.java:158)
+	at org.springframework.data.hadoop.configuration.ConfigurationUtils.addFiles(ConfigurationUtils.java:131)
+	at org.springframework.data.hadoop.mapreduce.JobGenericOptions.buildGenericOptions(JobGenericOptions.java:75)
+	at org.springframework.data.hadoop.mapreduce.JobFactoryBean.afterPropertiesSet(JobFactoryBean.java:123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:684)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:197)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:172)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:158)
+	at org.antczak.hadoop.mapreduce.Wordcount.main(Wordcount.java:28)
+20:34:27,713 DEBUG             org.apache.hadoop.util.Shell: 359 - setsid exited with exit code 0
+20:34:27,791 DEBUG adoop.metrics2.lib.MutableMetricsFactory:  42 - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of successful kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
+20:34:27,801 DEBUG adoop.metrics2.lib.MutableMetricsFactory:  42 - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[Rate of failed kerberos logins and latency (milliseconds)], about=, type=DEFAULT, always=false, sampleName=Ops)
+20:34:27,801 DEBUG adoop.metrics2.lib.MutableMetricsFactory:  42 - field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, value=[GetGroups], about=, type=DEFAULT, always=false, sampleName=Ops)
+20:34:27,802 DEBUG e.hadoop.metrics2.impl.MetricsSystemImpl: 220 - UgiMetrics, User and group related metrics
+20:34:27,895 DEBUG        org.apache.hadoop.security.Groups: 238 -  Creating new Groups object
+20:34:27,896 DEBUG  org.apache.hadoop.util.NativeCodeLoader:  46 - Trying to load the custom-built native-hadoop library...
+20:34:27,897 DEBUG  org.apache.hadoop.util.NativeCodeLoader:  55 - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+20:34:27,897 DEBUG  org.apache.hadoop.util.NativeCodeLoader:  56 - java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+20:34:27,897  WARN  org.apache.hadoop.util.NativeCodeLoader:  62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20:34:27,897 DEBUG ty.JniBasedUnixGroupsMappingWithFallback:  40 - Falling back to shell based
+20:34:27,897 DEBUG ty.JniBasedUnixGroupsMappingWithFallback:  44 - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+20:34:27,899 DEBUG        org.apache.hadoop.security.Groups:  80 - Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+20:34:27,904 DEBUG che.hadoop.security.UserGroupInformation: 193 - hadoop login
+20:34:27,904 DEBUG che.hadoop.security.UserGroupInformation: 142 - hadoop login commit
+20:34:27,906 DEBUG che.hadoop.security.UserGroupInformation: 172 - using local user:UnixPrincipal: krr
+20:34:27,907 DEBUG che.hadoop.security.UserGroupInformation: 754 - UGI loginUser:krr (auth:SIMPLE)
+20:34:27,998 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 385 - dfs.client.use.legacy.blockreader.local = false
+20:34:27,998 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 388 - dfs.client.read.shortcircuit = false
+20:34:27,998 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 391 - dfs.client.domain.socket.data.traffic = false
+20:34:27,999 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 394 - dfs.domain.socket.path = 
+20:34:28,030 DEBUG    org.apache.hadoop.io.retry.RetryUtils:  74 - multipleLinearRandomRetry = null
+20:34:28,052 DEBUG             org.apache.hadoop.ipc.Server: 228 - rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcRequestWrapper, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@6324be57
+20:34:28,063 DEBUG             org.apache.hadoop.ipc.Client:  63 - getting client out of cache: org.apache.hadoop.ipc.Client@319bb2d4
+20:34:28,322 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 105 - Both short-circuit local reads and UNIX domain socket are disabled.
+20:34:28,324 DEBUG ctory.support.DefaultListableBeanFactory: 477 - Finished creating instance of bean 'wordcountJob'
+20:34:28,324 DEBUG ctory.support.DefaultListableBeanFactory: 220 - Creating shared instance of singleton bean 'setupScript'
+20:34:28,325 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean 'setupScript'
+20:34:28,327 DEBUG ctory.support.DefaultListableBeanFactory: 523 - Eagerly caching bean 'setupScript' to allow for resolving potential circular references
+20:34:28,327 DEBUG ctory.support.DefaultListableBeanFactory: 247 - Returning cached instance of singleton bean 'hadoopConfiguration'
+20:34:28,336 DEBUG      org.springframework.beans.BeanUtils: 441 - No property editor [org.springframework.data.hadoop.scripting.EvaluationPolicyEditor] found for type org.springframework.data.hadoop.scripting.EvaluationPolicy according to 'Editor' suffix convention
+20:34:28,337 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean '(inner bean)#fba110e'
+20:34:28,354 DEBUG      org.springframework.beans.BeanUtils: 441 - No property editor [org.springframework.core.io.support.EncodedResourceEditor] found for type org.springframework.core.io.support.EncodedResource according to 'Editor' suffix convention
+20:34:28,355 DEBUG ctory.support.DefaultListableBeanFactory: 477 - Finished creating instance of bean '(inner bean)#fba110e'
+20:34:28,358 DEBUG ctory.support.DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'setupScript'
+20:34:28,424  INFO  org.apache.hadoop.fs.TrashPolicyDefault:  92 - Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+20:34:28,424 DEBUG ctory.support.DefaultListableBeanFactory: 477 - Finished creating instance of bean 'setupScript'
+20:34:28,424 DEBUG ctory.support.DefaultListableBeanFactory: 220 - Creating shared instance of singleton bean 'runner'
+20:34:28,424 DEBUG ctory.support.DefaultListableBeanFactory: 449 - Creating instance of bean 'runner'
+20:34:28,426 DEBUG ctory.support.DefaultListableBeanFactory: 523 - Eagerly caching bean 'runner' to allow for resolving potential circular references
+20:34:28,432 DEBUG ctory.support.DefaultListableBeanFactory: 247 - Returning cached instance of singleton bean 'setupScript'
+20:34:28,434 DEBUG ctory.support.DefaultListableBeanFactory:1595 - Invoking afterPropertiesSet() on bean with name 'runner'
+20:34:28,637 DEBUG a.hadoop.scripting.Jsr223ScriptEvaluator: 106 - Using ScriptEngine Groovy Scripting Engine (2.0), language Groovy (1.8.5)
+20:34:28,954 DEBUG             org.apache.hadoop.ipc.Client: 424 - The ping interval is 60000 ms.
+20:34:28,955 DEBUG             org.apache.hadoop.ipc.Client: 693 - Connecting to sandbox.hortonworks.com/192.168.1.115:8020
+20:34:28,971 DEBUG             org.apache.hadoop.ipc.Client: 944 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr: starting, having connections 1
+20:34:28,972 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #0
+20:34:28,997 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #0
+20:34:28,997 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 53ms
+20:34:29,027 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #1
+20:34:29,029 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #1
+20:34:29,029 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,036 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #2
+20:34:29,037 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #2
+20:34:29,037 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 1ms
+20:34:29,039 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #3
+20:34:29,041 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #3
+20:34:29,041 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,042  INFO  org.apache.hadoop.fs.TrashPolicyDefault:  92 - Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+20:34:29,044 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #4
+20:34:29,046 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #4
+20:34:29,047 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: delete took 4ms
+20:34:29,049 DEBUG ctory.support.DefaultListableBeanFactory: 247 - Returning cached instance of singleton bean 'wordcountJob'
+20:34:29,062 DEBUG      org.apache.hadoop.mapreduce.Cluster:  90 - Trying ClientProtocolProvider : org.apache.hadoop.mapred.YarnClientProtocolProvider
+20:34:29,073 DEBUG rg.apache.hadoop.service.AbstractService: 452 - Service: org.apache.hadoop.mapred.ResourceMgrDelegate entered state INITED
+20:34:29,073 DEBUG rg.apache.hadoop.service.AbstractService: 452 - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+20:34:29,095  INFO    org.apache.hadoop.yarn.client.RMProxy:  92 - Connecting to ResourceManager at sandbox.hortonworks.com/192.168.1.115:8050
+20:34:29,096 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:130)
+20:34:29,097 DEBUG       org.apache.hadoop.yarn.ipc.YarnRPC:  59 - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+20:34:29,098 DEBUG pache.hadoop.yarn.ipc.HadoopYarnProtoRPC:  47 - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+20:34:29,110 DEBUG             org.apache.hadoop.ipc.Client:  63 - getting client out of cache: org.apache.hadoop.ipc.Client@319bb2d4
+20:34:29,182 DEBUG rg.apache.hadoop.service.AbstractService: 197 - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+20:34:29,183 DEBUG rg.apache.hadoop.service.AbstractService: 197 - Service org.apache.hadoop.mapred.ResourceMgrDelegate is started
+20:34:29,214 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:330)
+20:34:29,217 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 385 - dfs.client.use.legacy.blockreader.local = false
+20:34:29,218 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 388 - dfs.client.read.shortcircuit = false
+20:34:29,218 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 391 - dfs.client.domain.socket.data.traffic = false
+20:34:29,218 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 394 - dfs.domain.socket.path = 
+20:34:29,219 DEBUG    org.apache.hadoop.io.retry.RetryUtils:  74 - multipleLinearRandomRetry = null
+20:34:29,219 DEBUG             org.apache.hadoop.ipc.Client:  63 - getting client out of cache: org.apache.hadoop.ipc.Client@319bb2d4
+20:34:29,220 DEBUG      org.apache.hadoop.mapreduce.Cluster: 103 - Picked org.apache.hadoop.mapred.YarnClientProtocolProvider as the ClientProtocolProvider
+20:34:29,221  INFO ramework.data.hadoop.mapreduce.JobRunner: 190 - Starting job [wordcountJob]
+20:34:29,222 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.connect(Job.java:1250)
+20:34:29,222 DEBUG      org.apache.hadoop.mapreduce.Cluster:  90 - Trying ClientProtocolProvider : org.apache.hadoop.mapred.YarnClientProtocolProvider
+20:34:29,223 DEBUG rg.apache.hadoop.service.AbstractService: 452 - Service: org.apache.hadoop.mapred.ResourceMgrDelegate entered state INITED
+20:34:29,223 DEBUG rg.apache.hadoop.service.AbstractService: 452 - Service: org.apache.hadoop.yarn.client.api.impl.YarnClientImpl entered state INITED
+20:34:29,243  INFO    org.apache.hadoop.yarn.client.RMProxy:  92 - Connecting to ResourceManager at sandbox.hortonworks.com/192.168.1.115:8050
+20:34:29,243 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.yarn.client.RMProxy.getProxy(RMProxy.java:130)
+20:34:29,244 DEBUG       org.apache.hadoop.yarn.ipc.YarnRPC:  59 - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+20:34:29,244 DEBUG pache.hadoop.yarn.ipc.HadoopYarnProtoRPC:  47 - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.yarn.api.ApplicationClientProtocol
+20:34:29,244 DEBUG             org.apache.hadoop.ipc.Client:  63 - getting client out of cache: org.apache.hadoop.ipc.Client@319bb2d4
+20:34:29,245 DEBUG rg.apache.hadoop.service.AbstractService: 197 - Service org.apache.hadoop.yarn.client.api.impl.YarnClientImpl is started
+20:34:29,245 DEBUG rg.apache.hadoop.service.AbstractService: 197 - Service org.apache.hadoop.mapred.ResourceMgrDelegate is started
+20:34:29,245 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:330)
+20:34:29,246 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 385 - dfs.client.use.legacy.blockreader.local = false
+20:34:29,246 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 388 - dfs.client.read.shortcircuit = false
+20:34:29,246 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 391 - dfs.client.domain.socket.data.traffic = false
+20:34:29,246 DEBUG  org.apache.hadoop.hdfs.BlockReaderLocal: 394 - dfs.domain.socket.path = 
+20:34:29,247 DEBUG    org.apache.hadoop.io.retry.RetryUtils:  74 - multipleLinearRandomRetry = null
+20:34:29,247 DEBUG             org.apache.hadoop.ipc.Client:  63 - getting client out of cache: org.apache.hadoop.ipc.Client@319bb2d4
+20:34:29,248 DEBUG      org.apache.hadoop.mapreduce.Cluster: 103 - Picked org.apache.hadoop.mapred.YarnClientProtocolProvider as the ClientProtocolProvider
+20:34:29,248 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Cluster.getFileSystem(Cluster.java:161)
+20:34:29,252 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.submit(Job.java:1282)
+20:34:29,254 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #5
+20:34:29,255 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #5
+20:34:29,256 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 3ms
+20:34:29,259 DEBUG apache.hadoop.mapred.ResourceMgrDelegate: 241 - getStagingAreaDir: dir=/tmp/hadoop-yarn/staging/krr/.staging
+20:34:29,260 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #6
+20:34:29,261 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #6
+20:34:29,262 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,262 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #7
+20:34:29,264 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #7
+20:34:29,264 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,274 DEBUG             org.apache.hadoop.ipc.Client: 424 - The ping interval is 60000 ms.
+20:34:29,274 DEBUG             org.apache.hadoop.ipc.Client: 693 - Connecting to sandbox.hortonworks.com/192.168.1.115:8050
+20:34:29,275 DEBUG             org.apache.hadoop.ipc.Client: 944 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr: starting, having connections 2
+20:34:29,275 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #8
+20:34:29,279 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #8
+20:34:29,279 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getNewApplication took 6ms
+20:34:29,286 DEBUG org.apache.hadoop.mapreduce.JobSubmitter: 367 - Configuring job job_1407347263019_0002 with /tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002 as the submit dir
+20:34:29,286 DEBUG org.apache.hadoop.mapreduce.JobSubmitter: 612 - adding the following namenodes' delegation tokens:[hdfs://sandbox.hortonworks.com:8020]
+20:34:29,295 DEBUG org.apache.hadoop.mapreduce.JobSubmitter: 170 - default FileSystem: hdfs://sandbox.hortonworks.com:8020
+20:34:29,296 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #9
+20:34:29,297 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #9
+20:34:29,297 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 1ms
+20:34:29,298 DEBUG         org.apache.hadoop.hdfs.DFSClient:2550 - /tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002: masked=rwxr-xr-x
+20:34:29,300 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #10
+20:34:29,303 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #10
+20:34:29,303 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: mkdirs took 3ms
+20:34:29,307 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #11
+20:34:29,311 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #11
+20:34:29,311 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: setPermission took 4ms
+20:34:29,313  WARN org.apache.hadoop.mapreduce.JobSubmitter: 259 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+20:34:29,315 DEBUG org.apache.hadoop.mapreduce.JobSubmitter: 393 - Creating splits at hdfs://sandbox.hortonworks.com:8020/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002
+20:34:29,319 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #12
+20:34:29,320 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #12
+20:34:29,321 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,322 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #13
+20:34:29,323 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #13
+20:34:29,323 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 1ms
+20:34:29,325 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #14
+20:34:29,327 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #14
+20:34:29,328 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getListing took 3ms
+20:34:29,361 DEBUG doop.mapreduce.lib.input.FileInputFormat: 278 - Time taken to get FileStatuses: 43
+20:34:29,362  INFO doop.mapreduce.lib.input.FileInputFormat: 280 - Total input paths to process : 1
+20:34:29,364 DEBUG doop.mapreduce.lib.input.FileInputFormat: 416 - Total # of splits generated by getSplits: 1, TimeTaken: 46
+20:34:29,367 DEBUG         org.apache.hadoop.hdfs.DFSClient:1454 - /tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.split: masked=rw-r--r--
+20:34:29,375 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #15
+20:34:29,379 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #15
+20:34:29,379 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: create took 4ms
+20:34:29,382 DEBUG         org.apache.hadoop.hdfs.DFSClient:1661 - computePacketChunkSize: src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.split, chunkSize=516, chunksPerPacket=127, packetSize=65532
+20:34:29,394 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #16
+20:34:29,394 DEBUG      org.apache.hadoop.hdfs.LeaseRenewer: 295 - Lease renewer daemon for [DFSClient_NONMAPREDUCE_327082597_1] with renew id 1 started
+20:34:29,397 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #16
+20:34:29,397 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: setPermission took 4ms
+20:34:29,399 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #17
+20:34:29,402 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #17
+20:34:29,402 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: setReplication took 3ms
+20:34:29,416 DEBUG         org.apache.hadoop.hdfs.DFSClient:1731 - DFSClient writeChunk allocating new packet seqno=0, src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.split, packetSize=65532, chunksPerPacket=127, bytesCurBlock=0
+20:34:29,417 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 0
+20:34:29,417 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 1
+20:34:29,417 DEBUG         org.apache.hadoop.hdfs.DFSClient:2009 - Waiting for ack for: 1
+20:34:29,417 DEBUG         org.apache.hadoop.hdfs.DFSClient: 523 - Allocating new block
+20:34:29,426 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #18
+20:34:29,430 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #18
+20:34:29,430 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: addBlock took 5ms
+20:34:29,434 DEBUG         org.apache.hadoop.hdfs.DFSClient:1304 - pipeline = 192.168.1.115:50010
+20:34:29,435 DEBUG         org.apache.hadoop.hdfs.DFSClient:1511 - Connecting to datanode 192.168.1.115:50010
+20:34:29,435 DEBUG         org.apache.hadoop.hdfs.DFSClient:1520 - Send buf size 131072
+20:34:29,436 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #19
+20:34:29,437 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #19
+20:34:29,437 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getServerDefaults took 1ms
+20:34:29,520 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742777_1957 sending packet packet seqno:0 offsetInBlock:0 lastPacketInBlock:false lastByteOffsetInBlock: 151
+20:34:29,587 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 0 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,587 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742777_1957 sending packet packet seqno:1 offsetInBlock:151 lastPacketInBlock:true lastByteOffsetInBlock: 151
+20:34:29,595 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 1 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,595 DEBUG         org.apache.hadoop.hdfs.DFSClient: 453 - Closing old block BP-1200952396-10.0.2.15-1398089695400:blk_1073742777_1957
+20:34:29,598 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #20
+20:34:29,600 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #20
+20:34:29,600 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: complete took 2ms
+20:34:29,603 DEBUG         org.apache.hadoop.hdfs.DFSClient:1454 - /tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.splitmetainfo: masked=rw-r--r--
+20:34:29,604 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #21
+20:34:29,609 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #21
+20:34:29,609 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: create took 5ms
+20:34:29,610 DEBUG         org.apache.hadoop.hdfs.DFSClient:1661 - computePacketChunkSize: src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.splitmetainfo, chunkSize=516, chunksPerPacket=127, packetSize=65532
+20:34:29,611 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #22
+20:34:29,614 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #22
+20:34:29,615 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: setPermission took 5ms
+20:34:29,616 DEBUG         org.apache.hadoop.hdfs.DFSClient:1731 - DFSClient writeChunk allocating new packet seqno=0, src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.splitmetainfo, packetSize=65532, chunksPerPacket=127, bytesCurBlock=0
+20:34:29,617 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 0
+20:34:29,617 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 1
+20:34:29,617 DEBUG         org.apache.hadoop.hdfs.DFSClient:2009 - Waiting for ack for: 1
+20:34:29,617 DEBUG         org.apache.hadoop.hdfs.DFSClient: 523 - Allocating new block
+20:34:29,618 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #23
+20:34:29,621 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #23
+20:34:29,621 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: addBlock took 3ms
+20:34:29,622 DEBUG         org.apache.hadoop.hdfs.DFSClient:1304 - pipeline = 192.168.1.115:50010
+20:34:29,622 DEBUG         org.apache.hadoop.hdfs.DFSClient:1511 - Connecting to datanode 192.168.1.115:50010
+20:34:29,623 DEBUG         org.apache.hadoop.hdfs.DFSClient:1520 - Send buf size 131072
+20:34:29,625 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742778_1958 sending packet packet seqno:0 offsetInBlock:0 lastPacketInBlock:false lastByteOffsetInBlock: 39
+20:34:29,627 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 0 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,627 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742778_1958 sending packet packet seqno:1 offsetInBlock:39 lastPacketInBlock:true lastByteOffsetInBlock: 39
+20:34:29,630 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 1 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,630 DEBUG         org.apache.hadoop.hdfs.DFSClient: 453 - Closing old block BP-1200952396-10.0.2.15-1398089695400:blk_1073742778_1958
+20:34:29,632 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #24
+20:34:29,636 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #24
+20:34:29,636 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: complete took 5ms
+20:34:29,637  INFO org.apache.hadoop.mapreduce.JobSubmitter: 396 - number of splits:1
+20:34:29,641 DEBUG         org.apache.hadoop.hdfs.DFSClient:1454 - /tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.xml: masked=rw-r--r--
+20:34:29,642 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #25
+20:34:29,645 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #25
+20:34:29,646 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: create took 4ms
+20:34:29,646 DEBUG         org.apache.hadoop.hdfs.DFSClient:1661 - computePacketChunkSize: src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.xml, chunkSize=516, chunksPerPacket=127, packetSize=65532
+20:34:29,647 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #26
+20:34:29,649 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #26
+20:34:29,649 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: setPermission took 2ms
+20:34:29,651 DEBUG     org.apache.hadoop.conf.Configuration: 594 - Handling deprecation for all properties in config...
+20:34:29,651 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.data.dir
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.checkpoint.txns
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3.replication
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.output.fileoutputformat.compress.type
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.jobhistory.lru.cache.size
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.failed.volumes.tolerated
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.filter.initializers
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.cluster.temp.dir
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.keytab
+20:34:29,652 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.memory.limit.percent
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.checkpoint.max-retries
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.zk-acl
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.skip.maxgroups
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.https.server.keystore.resource
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.task.container.log.backups
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.authentication.kerberos.keytab
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.generic-application-history.store-class
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.disk-health-checker.max-disk-utilization-per-disk-percentage
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.localizer.client.thread-count
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.done-dir
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.framework.name
+20:34:29,653 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.failover-controller.new-active.rpc-timeout.ms
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.health-monitor.check-interval.ms
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.file.buffer.size
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.max.connections
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.path.based.cache.block.map.allocation.percent
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.tmp.dir
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.checkpoint.period
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.mmap.cache.timeout.ms
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.kill.max
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.scheduler.class
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.taskcache.levels
+20:34:29,654 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3.stream-buffer-size
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.secondary.http-address
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.decommission.interval
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.http-address
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.files.preserve.failedtasks
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.encrypt.data.transfer
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.ha.enabled
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.address
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.avoid.write.stale.datanode
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for nfs3.server.port
+20:34:29,655 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.authentication.token.validity
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.group
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.failover.max.attempts
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.scheduler.monitor.policies
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.fs.state-store.retry-policy-spec
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.admin.acl
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.local-cache.max-files-per-directory
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.client.failover-retries-on-socket-timeouts
+20:34:29,656 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.application-tokens.master-key-rolling-interval-secs
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.retrycache.expirytime.millis
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.nodemanagers.heartbeat-interval-ms
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.failover.connection.retries.on.timeouts
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.client.failover-proxy-provider
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.sort.spill.percent
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for file.stream-buffer-size
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.webhdfs.enabled
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.connection.maxidletime
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.persist.jobstatus.hours
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.image.transfer.chunksize
+20:34:29,657 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.resourcemanager.connect.retry_interval.secs
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.address
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.ipc.address
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.ha.automatic-failover.embedded
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.recovery.store.fs.uri
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.zk-state-store.parent-path
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.job.task.listener.thread-count
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.list.cache.pools.num.responses
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.safemode.extension
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.generic-application-history.fs-history-store.compression-type
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.zookeeper.parent-znode
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.container-executor.class
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.path.based.cache.refresh.interval.ms
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.skip.checksum.errors
+20:34:29,658 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.user.name
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.scheduler.client.thread-count
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.authentication.kerberos.principal
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.log.level
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.user-pattern
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3.maxRetries
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.resourcemanager.minimum.version
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.kerberos.kinit.command
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.log-aggregation.retain-check-interval-seconds
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.default.name
+20:34:29,659  INFO he.hadoop.conf.Configuration.deprecation:1009 - fs.default.name is deprecated. Instead, use fs.defaultFS
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.process-kill-wait.ms
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.mount
+20:34:29,659 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.output.key.class
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.working.dir
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.name.dir.restore
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.handler.count
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.admin.address
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.client-am.ipc.max-retries
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.use.datanode.hostname
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.util.hash.type
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.available-space-volume-choosing-policy.balanced-space-preference-fraction
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.dns.interface
+20:34:29,660 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.seqfile.lazydecompress
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.disk-health-checker.min-healthy-disks
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.maxtaskfailures.per.tracker
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.healthchecker.script.timeout
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.client.max-nodemanagers-proxies
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping.ldap.search.attr.group.name
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.df.interval
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.kerberos.internal.spnego.principal
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.cached.conn.retry
+20:34:29,661 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.reduce.class
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.map.class
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.reduce.shuffle.consumer.plugin.class
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.address
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.tasks.sleeptimebeforesigkill
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.journalnode.rpc-address
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.fs-limits.max-blocks-per-file
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.acl-view-job
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.job.committer.cancel-timeout
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.policy
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.connection-keep-alive.enable
+20:34:29,662 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.replication.interval
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.minicluster.fixed.ports
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.num.checkpoints.retained
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.scheduler.address
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.http.address
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.admin.acl
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.directoryscan.threads
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping.ldap.ssl
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.http.policy
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.merge.progress.records
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.heartbeat.interval
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.recovery.enabled
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for net.topology.script.number.args
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.local.clientfactory.class.name
+20:34:29,663 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client-write-packet-size
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping.ldap.directory.search.timeout
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.native.lib.available
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.failover.connection.retries
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.disk-health-checker.interval-ms
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.blocksize
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.webapp.address
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.resource-tracker.client.thread-count
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.client.failover-retries
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.blockreport.initialDelay
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.aux-services.mapreduce_shuffle.class
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.health-monitor.rpc-timeout.ms
+20:34:29,664 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.zk-timeout-ms
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.markreset.buffer.percent
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.ha.tail-edits.period
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.client.thread-count
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.health-checker.script.timeout-ms
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for file.bytes-per-checksum
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.replication.max
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.max.extra.edits.segments.retained
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.map.index.skip
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.timeout
+20:34:29,665 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.du.reserved
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.cpu.vcores
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.support.append
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.file-block-storage-locations.num-threads
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ftp.blocksize
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.container-manager.thread-count
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.amliveliness-monitor.interval-ms
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.server.listen.queue.size
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.ha.automatic-failover.enabled
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.ssl.hostname.verifier
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.dns.interface
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping.ldap.search.attr.member
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.userlog.retain.hours
+20:34:29,666 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.outofband.heartbeat
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.name
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.resource.memory-mb
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.webhdfs.user.provider.user.pattern
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.delegation.token.renew-interval
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.ssl.keystores.factory.class
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.http.policy
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.sync.behind.writes
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.maxattempts
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.webapp.address
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.handler.count
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.ssl.require.client.cert
+20:34:29,667 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ftp.client-write-packet-size
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.write.exclude.nodes.cache.expiry.interval.millis
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.server.tcpnodelay
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.cleaner.enable
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.du.interval
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.retry-delay.max.ms
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.profile.reduces
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.health-monitor.connect-retry-interval.ms
+20:34:29,668 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.fuse.connection.timeout
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.permissions.superusergroup
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.jobhistory.task.numberprogresssplits
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.ftp.host.port
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.speculative
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.data.dir.perm
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.client.submit.file.replication
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.ubertask.maxmaps
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3native.blocksize
+20:34:29,669 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.replication.min
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.cluster.acls.enabled
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.uid.cache.secs
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.localizer.fetch.thread-count
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for map.sort.class
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.trash.checkpoint.interval
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapred.queue.default.acl-administer-jobs
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.image.transfer.timeout
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.name.dir
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.connect.timeout
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.staging-dir
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.AbstractFileSystem.file.impl
+20:34:29,670 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.env-whitelist
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.image.compression.codec
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.reduces
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.complete.cancel.delegation.tokens
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.recovery.store.class
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.user
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.sleep-delay-before-sigkill.ms
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.enable.retrycache
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.joblist.cache.size
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.healthchecker.interval
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.heartbeats.in.second
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.backup.http-address
+20:34:29,671 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.persist.jobstatus.dir
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.rpc.protection
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.mmap.enabled
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.container.log.backups
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ftp.stream-buffer-size
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.https-address
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.address
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.ha.log-roll.period
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.input.fileinputformat.numinputfiles
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.admin.client.thread-count
+20:34:29,672 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.fsdatasetcache.max.threads.per.volume
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for file.client-write-packet-size
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.authentication.simple.anonymous.allowed
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.path
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.drop.cache.behind.reads
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.log.retain-seconds
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.image.transfer.bandwidthPerSec
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.instrumentation
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.failover-controller.cli-check.rpc-timeout.ms
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.linux-container-executor.cgroups.hierarchy
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.write.stale.datanode.ratio
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.groups.cache.warn.after.ms
+20:34:29,673 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.client.thread-count
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.mapfile.bloom.size
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.ha.fencing.ssh.connect-timeout
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.zk-num-retries
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3.bytes-per-checksum
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.container.log.limit.kb
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.edit.log.autoroll.check.interval.ms
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.automatic.close
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.trash.interval
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.journalnode.https-address
+20:34:29,674 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.authentication
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.ttl-ms
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.defaultFS
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.generic-application-history.enabled
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.ssl.server.conf
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.connect.max.retries
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.delayed.delegation-token.removal-interval-ms
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.journalnode.http-address
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.shared.file.descriptor.paths
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.taskscheduler
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.speculative.speculativecap
+20:34:29,675 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.store-class
+20:34:29,676 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.am.liveness-monitor.expiry-interval-ms
+20:34:29,676 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.output.fileoutputformat.compress
+20:34:29,676 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for net.topology.node.switch.mapping.impl
+20:34:29,676 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.replication.considerLoad
+20:34:29,676 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.fs-limits.min-block-size
+20:34:29,677 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.swift.impl
+20:34:29,677 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.audit.loggers
+20:34:29,677 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.max.split.locations
+20:34:29,677 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.address
+20:34:29,677 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.counters.max
+20:34:29,677 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.block.write.retries
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.nm.liveness-monitor.interval-ms
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.short.circuit.shared.memory.watcher.interrupt.check.ms
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.map.index.interval
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapred.child.java.opts
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.local.dir.minspacestart
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.client.progressmonitor.pollinterval
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.https.keystore.resource
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.profile.map.params
+20:34:29,678 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for rpc.engine.org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolPB
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.tasktracker.maxblacklists
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.queuename
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.localizer.address
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.mapfile.bloom.error.rate
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.delete.thread-count
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.split.metainfo.maxsize
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.scheduler.maximum-allocation-vcores
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapred.mapper.new-api
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.tcpnodelay
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.dir
+20:34:29,679 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.resource.mb
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.dns.nameserver
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.output.compress.codec
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.accesstime.precision
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.log.level
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.seqfile.compress.blocksize
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.taskcontroller
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.groups.cache.secs
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.context
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapred.used.genericoptionsparser
+20:34:29,680 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.end-notification.max.attempts
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.linux-container-executor.nonsecure-mode.local-user
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.webapp.address
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.submithostname
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.recovery.enable
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.expire.trackers.interval
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.webapp.address
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.health-checker.interval-ms
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.loadedjobs.cache.size
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.authorization
+20:34:29,681 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.map.output.collector.class
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.am.max-attempts
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.ftp.host
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.scheduler.heartbeat.interval-ms
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.ifile.readahead
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.scheduler.monitor.enable
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.zk-retry-interval-ms
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.zookeeper.session-timeout.ms
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.taskmemorymanager.monitoringinterval
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.parallelcopies
+20:34:29,682 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.mmap.retry.timeout.ms
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.skip.maxrecords
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.classloader.system.classes
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.avoid.read.stale.datanode
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.https.enable
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.webapp.https.address
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.read.timeout
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.remote-app-log-dir-suffix
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.output.fileoutputformat.compress.codec
+20:34:29,683 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.instrumentation
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.blockreport.intervalMsec
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.connect.retry.interval
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.speculative
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.keytab
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.datestring.cache.size
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.balance.bandwidthPerSec
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for file.blocksize
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.admin.address
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.cpu.vcores
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled
+20:34:29,684 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.configuration.provider-class
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.resource-tracker.address
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.local.dir.minspacekill
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.staging.root.dir
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.retiredjobs.cache.size
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.connect.max.retries.on.timeouts
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.zookeeper.acl
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.local-dirs
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.app-submission.cross-platform
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.connect.timeout
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.block.access.key.update.interval
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for rpc.metrics.quantile.enable
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.block.access.token.lifetime
+20:34:29,685 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.end-notification.retry.attempts
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.system.dir
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.file-block-storage-locations.timeout.millis
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.admin-env
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.jobhistory.block.size
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.log-aggregation.retain-seconds
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.indexcache.mb
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.handler-thread-count
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.checkpoint.check.period
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.hostname
+20:34:29,686 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.enable
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for net.topology.impl
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapred.job.tracker
+20:34:29,687  INFO he.hadoop.conf.Configuration.deprecation:1009 - mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.directoryscan.interval
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.container-monitor.interval-ms
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.default.chunk.view.size
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.speculative.slownodethreshold
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.reduce.slowstart.completedmaps
+20:34:29,687 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapred.reducer.new-api
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.instrumentation.requires.admin
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.compression.codec.bzip2.library
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.authentication.signature.secret.file
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.safemode.min.datanodes
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.localizer.cache.target-size-mb
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.maxattempts
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.input.fileinputformat.inputdir
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.https.address
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3native.replication
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.path.based.cache.retry.interval.ms
+20:34:29,688 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.skip.proc.count.autoincr
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.cleaner.interval-ms
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for file.replication
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.hdfs.configuration.version
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.idlethreshold
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.tmp.dir
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.store.class
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.address
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.restart.recover
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.cluster.local.dir
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.client.nodemanager-client-async.thread-pool-max-size
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.ipc.serializer.type
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.decommission.nodes.per.interval
+20:34:29,689 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.resource.cpu-vcores
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.reject-unresolved-dn-topology-mapping
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.delegation.key.update-interval
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3.buffer.dir
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.support.allow.format
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.remote-app-log-dir
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.edit.log.autoroll.multiplier.threshold
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.work.around.non.threadsafe.getpwuid
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.profile.reduce.params
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.ha.automatic-failover.enabled
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.edits.noeditlogchannelflush
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.stale.datanode.interval
+20:34:29,690 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.transfer.buffer.size
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.persist.jobstatus.active
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.logging.level
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.log-dirs
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.health-monitor.sleep-after-disconnect.ms
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.fs.state-store.uri
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.checkpoint.edits.dir
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.keytab
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.rpc.socket.factory.class.default
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.http.address
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.profile
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.move.interval-ms
+20:34:29,691 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.edits.dir
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.fuse.timer.period
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.http.policy
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.intermediate-done-dir
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.skip.proc.count.autoincr
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.AbstractFileSystem.viewfs.impl
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.speculative.slowtaskthreshold
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3native.stream-buffer-size
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.delete.debug-delay-sec
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.secondary.namenode.kerberos.internal.spnego.principal
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.available-space-volume-choosing-policy.balanced-space-threshold
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3n.multipart.uploads.block.size
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.safemode.threshold-pct
+20:34:29,692 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.ifile.readahead.bytes
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.scheduler.maximum-allocation-mb
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ipc.client.fallback-to-simple-auth-allowed
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.read-cache-size
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.hostname
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3native.bytes-per-checksum
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.committer.setup.cleanup.needed
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.ttl-interval-ms
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.log-aggregation.compression-type
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.job.committer.commit-window
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.authentication.type
+20:34:29,693 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.failover.sleep.base.millis
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.submithostaddress
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.vmem-check-enabled
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.jetty.logs.serve.aliases
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.failover-controller.graceful-fence.rpc-timeout.ms
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.input.buffer.percent
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.max.transfer.threads
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.merge.inmem.threshold
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.io.sort.mb
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.acls.enabled
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.client.application-client-protocol.poll-interval-ms
+20:34:29,694 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.handler.count
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.connect.max-wait.ms
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.retrycache.heap.percent
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.enabled
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.ssl.client.conf
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.container.liveness-monitor.interval-ms
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.vmem-pmem-ratio
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.client.completion.pollinterval
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.client.max-retries
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.ssl.enabled
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.client.resolve.remote.symlinks
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.AbstractFileSystem.hdfs.impl
+20:34:29,695 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.client.genericoptionsparser.used
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.reduce.tasks.maximum
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.hostname
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.input.buffer.percent
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.command-opts
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.invalidate.work.pct.per.iteration
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.bytes-per-checksum
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.webapp.https.address
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.replication
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.ssl.file.buffer.size
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.list.cache.directives.num.responses
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.permissions.enabled
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.maxtasks.perjob
+20:34:29,696 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.use.datanode.hostname
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.userlog.limit.kb
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.fs-limits.max-directory-items
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3.client-write-packet-size
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.user.group.static.mapping.overrides
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.max.threads
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.failover.sleep.max.millis
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.maps
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.fs-limits.max-component-length
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3.blocksize
+20:34:29,697 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.output.compress
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.generic-application-history.fs-history-store.uri
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.edits.journal-plugin.qjournal
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.datanode.registration.ip-hostname-check
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.pmem-check-enabled
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.short.circuit.replica.stale.threshold.ms
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.https.need-auth
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.scheduler.minimum-allocation-mb
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.max-age-ms
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ftp.replication
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.secondary.https-address
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.blockreport.split.threshold
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.input.fileinputformat.split.minsize
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3n.block.size
+20:34:29,698 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.token.tracking.ids.enabled
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.ipc.rpc.class
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.num.extra.edits.retained
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.localizer.cache.cleanup.interval-ms
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.http.staticuser.user
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.jvm.numtasks
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.move.thread-count
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.profile.maps
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.resourcemanager.connect.wait.secs
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.max.locked.memory
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.cachereport.intervalMsec
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.port
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.nodemanager.minimum.version
+20:34:29,699 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.connection-keep-alive.timeout
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.reduce.shuffle.merge.percent
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobtracker.http.address
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.skip.start.attempts
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.connect.retry-interval.ms
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.scheduler.minimum-allocation-vcores
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.task.io.sort.factor
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.checkpoint.dir
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for tfile.fs.input.buffer.size
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3.block.size
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for tfile.io.chunk.size
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3n.multipart.copy.block.size
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.serializations
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.max-completed-applications
+20:34:29,700 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.jobhistory.principal
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.output.fileoutputformat.outputdir
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.ha.automatic-failover.zk-base-path
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.end-notification.retry.interval
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.backup.address
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3n.multipart.uploads.enabled
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.seqfile.sorter.recordlimit
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.block.access.token.enable
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for s3native.client-write-packet-size
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ftp.bytes-per-checksum
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.security.group.mapping
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.end-notification.max.retry.interval
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.acl.enable
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nm.liveness-monitor.expiry-interval-ms
+20:34:29,701 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.mmap.cache.size
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.input.fileinputformat.list-status.num-threads
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.map.tasks.maximum
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.ttl-enable
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.nodemanager.linux-container-executor.resources-handler.class
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.max.objects
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.state-store.max-completed-applications
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.delegation.token.max-lifetime
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.classloader
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.hdfs-servers
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for nfs3.mountd.port
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.application.classpath
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.dns.nameserver
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.hdfs-blocks-metadata.enabled
+20:34:29,702 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.readahead.bytes
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.ubertask.maxreduces
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.image.compress
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.shuffle.ssl.enabled
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.report.address
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.log-aggregation-enable
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.tasktracker.http.threads
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.stream-buffer-size
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for tfile.fs.output.buffer.size
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.permissions.umask-mode
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.client.datanode-restart.timeout
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.resourcemanager.am.max-attempts
+20:34:29,703 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for ha.failover-controller.graceful-fence.connection.retries
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.datanode.drop.cache.behind.writes
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.map.output.value.class
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for hadoop.common.configuration.version
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.ubertask.enable
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for yarn.app.mapreduce.am.resource.cpu-vcores
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for dfs.namenode.replication.work.multiplier.per.iteration
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.job.acl-modify-job
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for io.seqfile.local.dir
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for fs.s3.sleepTimeSeconds
+20:34:29,704 DEBUG     org.apache.hadoop.conf.Configuration: 599 - Handling deprecation for mapreduce.client.output.filter
+20:34:29,802 DEBUG         org.apache.hadoop.hdfs.DFSClient:1731 - DFSClient writeChunk allocating new packet seqno=0, src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.xml, packetSize=65532, chunksPerPacket=127, bytesCurBlock=0
+20:34:29,842 DEBUG         org.apache.hadoop.hdfs.DFSClient:1750 - DFSClient writeChunk packet full seqno=0, src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.xml, bytesCurBlock=65024, blockSize=134217728, appendChunk=false
+20:34:29,843 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 0
+20:34:29,843 DEBUG         org.apache.hadoop.hdfs.DFSClient:1661 - computePacketChunkSize: src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.xml, chunkSize=516, chunksPerPacket=127, packetSize=65532
+20:34:29,843 DEBUG         org.apache.hadoop.hdfs.DFSClient: 523 - Allocating new block
+20:34:29,843 DEBUG         org.apache.hadoop.hdfs.DFSClient:1731 - DFSClient writeChunk allocating new packet seqno=1, src=/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002/job.xml, packetSize=65532, chunksPerPacket=127, bytesCurBlock=65024
+20:34:29,843 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #27
+20:34:29,846 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #27
+20:34:29,846 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: addBlock took 3ms
+20:34:29,847 DEBUG         org.apache.hadoop.hdfs.DFSClient:1304 - pipeline = 192.168.1.115:50010
+20:34:29,847 DEBUG         org.apache.hadoop.hdfs.DFSClient:1511 - Connecting to datanode 192.168.1.115:50010
+20:34:29,847 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 1
+20:34:29,847 DEBUG         org.apache.hadoop.hdfs.DFSClient:1520 - Send buf size 131072
+20:34:29,847 DEBUG         org.apache.hadoop.hdfs.DFSClient:1674 - Queued packet 2
+20:34:29,847 DEBUG         org.apache.hadoop.hdfs.DFSClient:2009 - Waiting for ack for: 2
+20:34:29,849 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742779_1959 sending packet packet seqno:0 offsetInBlock:0 lastPacketInBlock:false lastByteOffsetInBlock: 65024
+20:34:29,849 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742779_1959 sending packet packet seqno:1 offsetInBlock:65024 lastPacketInBlock:false lastByteOffsetInBlock: 77357
+20:34:29,858 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 0 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,861 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 1 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,861 DEBUG         org.apache.hadoop.hdfs.DFSClient: 573 - DataStreamer block BP-1200952396-10.0.2.15-1398089695400:blk_1073742779_1959 sending packet packet seqno:2 offsetInBlock:77357 lastPacketInBlock:true lastByteOffsetInBlock: 77357
+20:34:29,863 DEBUG         org.apache.hadoop.hdfs.DFSClient: 798 - DFSClient seqno: 2 status: SUCCESS downstreamAckTimeNanos: 0
+20:34:29,863 DEBUG         org.apache.hadoop.hdfs.DFSClient: 453 - Closing old block BP-1200952396-10.0.2.15-1398089695400:blk_1073742779_1959
+20:34:29,864 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #28
+20:34:29,866 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #28
+20:34:29,866 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: complete took 3ms
+20:34:29,866  INFO org.apache.hadoop.mapreduce.JobSubmitter: 479 - Submitting tokens for job: job_1407347263019_0002
+20:34:29,867 DEBUG     org.apache.hadoop.mapred.ClientCache:  88 - Connecting to HistoryServer at: sandbox.hortonworks.com:10020
+20:34:29,867 DEBUG       org.apache.hadoop.yarn.ipc.YarnRPC:  59 - Creating YarnRPC for org.apache.hadoop.yarn.ipc.HadoopYarnProtoRPC
+20:34:29,867 DEBUG     org.apache.hadoop.mapred.ClientCache:  90 - Connected to HistoryServer at: sandbox.hortonworks.com:10020
+20:34:29,867 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.mapred.ClientCache.instantiateHistoryProxy(ClientCache.java:92)
+20:34:29,868 DEBUG pache.hadoop.yarn.ipc.HadoopYarnProtoRPC:  47 - Creating a HadoopYarnProtoRpc proxy for protocol interface org.apache.hadoop.mapreduce.v2.api.HSClientProtocol
+20:34:29,873 DEBUG             org.apache.hadoop.ipc.Client:  63 - getting client out of cache: org.apache.hadoop.ipc.Client@319bb2d4
+20:34:29,898 DEBUG      org.apache.hadoop.mapred.YARNRunner: 339 - AppMaster capability = <memory:1536, vCores:1>
+20:34:29,899 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #29
+20:34:29,900 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #29
+20:34:29,900 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,911 DEBUG      org.apache.hadoop.mapred.YARNRunner: 351 - Creating setup context, jobSubmitDir url is scheme: "hdfs" host: "sandbox.hortonworks.com" port: 8020 file: "/tmp/hadoop-yarn/staging/krr/.staging/job_1407347263019_0002"
+20:34:29,917 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #30
+20:34:29,918 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #30
+20:34:29,919 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,919 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #31
+20:34:29,920 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #31
+20:34:29,921 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,923  INFO      org.apache.hadoop.mapred.YARNRunner: 369 - Job jar is not present. Not adding any jar to the list of resources.
+20:34:29,923 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #32
+20:34:29,925 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #32
+20:34:29,925 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,926 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #33
+20:34:29,927 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #33
+20:34:29,927 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 1ms
+20:34:29,928 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #34
+20:34:29,930 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #34
+20:34:29,930 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,931 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr sending #35
+20:34:29,933 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8020 from krr got value #35
+20:34:29,933 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getFileInfo took 2ms
+20:34:29,934 DEBUG      org.apache.hadoop.mapred.YARNRunner: 442 - Command to launch container for ApplicationMaster is : $JAVA_HOME/bin/java -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=<LOG_DIR> -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA  -Xmx1024m org.apache.hadoop.mapreduce.v2.app.MRAppMaster 1><LOG_DIR>/stdout 2><LOG_DIR>/stderr 
+20:34:29,947 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #36
+20:34:29,950 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #36
+20:34:29,951 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: submitApplication took 4ms
+20:34:29,955 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #37
+20:34:29,957 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #37
+20:34:29,958 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getApplicationReport took 3ms
+20:34:29,965  INFO doop.yarn.client.api.impl.YarnClientImpl: 204 - Submitted application application_1407347263019_0002
+20:34:29,966 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #38
+20:34:29,967 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #38
+20:34:29,968 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getApplicationReport took 3ms
+20:34:29,976 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #39
+20:34:29,977 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #39
+20:34:29,977 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getApplicationReport took 1ms
+20:34:29,989  INFO          org.apache.hadoop.mapreduce.Job:1289 - The url to track the job: http://sandbox.hortonworks.com:8088/proxy/application_1407347263019_0002/
+20:34:29,990  INFO          org.apache.hadoop.mapreduce.Job:1334 - Running job: job_1407347263019_0002
+20:34:29,991 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:311)
+20:34:29,993 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #40
+20:34:29,994 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #40
+20:34:29,995 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getApplicationReport took 1ms
+20:34:29,995 DEBUG che.hadoop.security.UserGroupInformation:1572 - PrivilegedAction as:krr (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:311)
+20:34:29,995 DEBUG             org.apache.hadoop.ipc.Client:1007 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr sending #41
+20:34:29,997 DEBUG             org.apache.hadoop.ipc.Client:1064 - IPC Client (386610024) connection to sandbox.hortonworks.com/192.168.1.115:8050 from krr got value #41
+20:34:29,997 DEBUG  org.apache.hadoop.ipc.ProtobufRpcEngine: 221 - Call: getApplicationReport took 2ms
+20:34:30,850 DEBUG             org.apache.hadoop.ipc.Client:  97 - stopping client from cache: org.apache.hadoop.ipc.Client@319bb2d4

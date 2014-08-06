@@ -17,7 +17,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.hadoop.version>2.0.0.RELEASE</spring.hadoop.version>
+        <spring.hadoop.version>2.0.0.RC4-hdp21</spring.hadoop.version>
         <hadoop.version>2.4.0</hadoop.version>
         <hadoop.examples>hadoop-mapreduce-examples</hadoop.examples>
         <mapreduce.framework>yarn</mapreduce.framework>
@@ -78,10 +78,38 @@
                                 <copy todir="target/appassembler/data">
                                     <fileset dir="data"/>
                                 </copy>
+                                <copy todir="target/appassembler/etc">
+                                    <fileset dir="etc"/>
+                                </copy>
                             </tasks>
                         </configuration>
                         <goals>
                             <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.2.2</version>
+                <configuration>
+                    <repositoryLayout>flat</repositoryLayout>
+                    <configurationSourceDirectory>src/main/config</configurationSourceDirectory>
+                    <copyConfigurationDirectory>true</copyConfigurationDirectory>
+                    <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>
+                    <programs>
+                        <program>
+                            <mainClass>org.antczak.hadoop.mapreduce.Wordcount</mainClass>
+                            <name>wordcount</name>
+                        </program>
+                    </programs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <goals>
+                            <goal>assemble</goal>
                         </goals>
                     </execution>
                 </executions>
