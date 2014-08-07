@@ -18,11 +18,11 @@
 	</configuration>
 
 	<job id="wordcountJob"
+         jar-by-class="org.antczak.hadoop.wordcount.WordCount"
 	     input-path="${wordcount.input.path}" 
 	     output-path="${wordcount.output.path}"
-         libs="file:${app.repo}/hadoop-examples-*.jar"
-		 mapper="org.apache.hadoop.examples.WordCount.TokenizerMapper"
-		 reducer="org.apache.hadoop.examples.WordCount.IntSumReducer"/>
+         mapper="org.antczak.hadoop.wordcount.WordCount.TokenizerMapper"
+		 reducer="org.antczak.hadoop.wordcount.WordCount.IntSumReducer"/>
 
 	<script id="setupScript" location="copy-files.groovy">
 		<property name="localSourceFile" value="${basedir}/${localSourceFile}"/>

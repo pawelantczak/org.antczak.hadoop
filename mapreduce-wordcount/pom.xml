@@ -54,6 +54,7 @@
             <version>1.8.5</version>
             <scope>runtime</scope>
         </dependency>
+
     </dependencies>
 
     <repositories>
@@ -99,7 +100,7 @@
                     <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>
                     <programs>
                         <program>
-                            <mainClass>org.antczak.hadoop.mapreduce.Wordcount</mainClass>
+                            <mainClass>org.antczak.hadoop.wordcount.Application</mainClass>
                             <name>wordcount</name>
                         </program>
                     </programs>
