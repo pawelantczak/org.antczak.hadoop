@@ -22,6 +22,7 @@
     <modules>
         <module>mapreduce</module>
         <module>mapreduce-wordcount</module>
+        <module>mapreduce-holidays</module>
     </modules>
 
     <dependencies>
