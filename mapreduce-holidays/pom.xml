@@ -75,9 +75,6 @@
                         <phase>package</phase>
                         <configuration>
                             <tasks>
-                                <copy todir="target/appassembler/data">
-                                    <fileset dir="data"/>
-                                </copy>
                                 <copy todir="target/appassembler/etc">
                                     <fileset dir="etc"/>
                                 </copy>
@@ -100,7 +97,7 @@
                     <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>
                     <programs>
                         <program>
-                            <mainClass>org.antczak.hadoop.wordcount.Application</mainClass>
+                            <mainClass>org.antczak.hadoop.holidays.Application</mainClass>
                             <name>wordcount</name>
                         </program>
                     </programs>
