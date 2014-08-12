@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/hadoop"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:context="http://www.springframework.org/schema/context"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/hadoop http://www.springframework.org/schema/hadoop/spring-hadoop.xsd">
+
+    <context:property-placeholder location="hadoop.properties,hive.properties"/>
+
+    <configuration>
+        fs.default.name=${hd.fs}
+        mapred.job.tracker=${hd.jt}
+        yarn.resourcemanager.address=${hd.rm}
+        mapreduce.framework.name=${mr.fw}
+        mapreduce.jobhistory.address=${mr.jh}
+    </configuration>
+
+    <script id="setupScript" location="startup.groovy" run-at-startup="true">
+        <property name="inputDir" value="${tweeter.input.path}"/>
+        <property name="outputDir" value="${tweeter.output.path}"/>
+    </script>
+    <!--
+        <job id="tweetToWords"
+             jar-by-class="org.antczak.hadoop.holidays.jobs.TweetToWords"
+             input-path="${tweeter.input.path}"
+             output-path="${tweeter.output.path}"
+             mapper="org.antczak.hadoop.holidays.jobs.TweetToWords.TokenizerMapper"
+             reducer="org.antczak.hadoop.holidays.jobs.TweetToWords.DummyReducer"/>
+
+        <job-runner id="runner" run-at-startup="false"
+                    pre-action="setupScript"
+                    job-ref="tweetToWords"/>
+
+
+    -->
+    <hive-client-factory host="${hive.host}" port="${hive.port}" />
+    <hive-runner id="hiveRunner" run-at-startup="true">
+        <script>
+            SELECT s07.description, s07.total_emp, s08.total_emp, s07.salary
+            FROM
+            sample_07 s07 JOIN
+            sample_08 s08
+            ON ( s07.code = s08.code )
+            WHERE
+            ( s07.total_emp > s08.total_emp
+            AND s07.salary > 100000 )
+            SORT BY s07.salary DESC
+        </script>
+
+    </hive-runner>
+
+</beans:beans>

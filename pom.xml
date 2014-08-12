@@ -20,9 +20,8 @@
     </properties>
 
     <modules>
-        <module>mapreduce</module>
-        <module>mapreduce-wordcount</module>
-        <module>mapreduce-holidays</module>
+        <module>wordcount</module>
+        <module>holidays-country</module>
     </modules>
 
     <dependencies>
