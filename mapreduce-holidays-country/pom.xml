@@ -20,7 +20,7 @@
         <hadoop.version>2.4.0</hadoop.version>
         <hadoop.examples>hadoop-mapreduce-examples</hadoop.examples>
         <mapreduce.framework>yarn</mapreduce.framework>
-        <hive.version>0.12.0</hive.version>
+        <hive.version>0.13.0</hive.version>
     </properties>
 
     <dependencies>
@@ -169,7 +169,7 @@
                     <repositoryLayout>flat</repositoryLayout>
                     <configurationSourceDirectory>src/main/config</configurationSourceDirectory>
                     <copyConfigurationDirectory>true</copyConfigurationDirectory>
-                    <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>
+                   <!-- <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>-->
                     <programs>
                         <program>
                             <mainClass>org.antczak.hadoop.holidays.Application</mainClass>

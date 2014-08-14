@@ -17,38 +17,23 @@
         mapreduce.jobhistory.address=${mr.jh}
     </configuration>
 
-    <script id="setupScript" location="startup.groovy" run-at-startup="true">
+    <script id="setupScript" location="startup.groovy" run-at-startup="false" >
         <property name="inputDir" value="${tweeter.input.path}"/>
         <property name="outputDir" value="${tweeter.output.path}"/>
     </script>
-    <!--
-        <job id="tweetToWords"
-             jar-by-class="org.antczak.hadoop.holidays.jobs.TweetToWords"
-             input-path="${tweeter.input.path}"
-             output-path="${tweeter.output.path}"
-             mapper="org.antczak.hadoop.holidays.jobs.TweetToWords.TokenizerMapper"
-             reducer="org.antczak.hadoop.holidays.jobs.TweetToWords.DummyReducer"/>
 
-        <job-runner id="runner" run-at-startup="false"
-                    pre-action="setupScript"
-                    job-ref="tweetToWords"/>
+    <job id="tweetToWords"
+         jar-by-class="org.antczak.hadoop.holidays.jobs.TweetToWords"
+         input-path="${tweeter.input.path}"
+         output-path="${tweeter.output.path}"
+         mapper="org.antczak.hadoop.holidays.jobs.TweetToWords.TokenizerMapper"
+         reducer="org.antczak.hadoop.holidays.jobs.TweetToWords.DummyReducer"/>
+
+    <job-runner id="runner" run-at-startup="true"
+                pre-action="setupScript"
+                job-ref="tweetToWords"/>
 
 
-    -->
-    <hive-client-factory host="${hive.host}" port="${hive.port}" />
-    <hive-runner id="hiveRunner" run-at-startup="true">
-        <script>
-            SELECT s07.description, s07.total_emp, s08.total_emp, s07.salary
-            FROM
-            sample_07 s07 JOIN
-            sample_08 s08
-            ON ( s07.code = s08.code )
-            WHERE
-            ( s07.total_emp > s08.total_emp
-            AND s07.salary > 100000 )
-            SORT BY s07.salary DESC
-        </script>
 
-    </hive-runner>
 
 </beans:beans>

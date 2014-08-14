@@ -16,7 +16,7 @@ import java.util.StringTokenizer;
 public class TweetToWords {
 
     private static final Log log = LogFactory.getLog(TweetToWords.class);
-    private static final String COUNTRY = "token:ountry:";
+    private static final String COUNTRY = "token:country:";
     private static final String TIMEZONE = "token:timeZone:";
 
     public static class TokenizerMapper

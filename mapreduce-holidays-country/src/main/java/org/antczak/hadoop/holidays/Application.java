@@ -31,8 +31,8 @@ public class Application {
         log.info("Holidays with HDFS copy Application Running");
         context.registerShutdownHook();
 
-        HiveRunner runner = context.getBean(HiveRunner.class);
-        runner.call();
+        //HiveRunner runner = context.getBean(HiveRunner.class);
+        //runner.call();
 
         context.close();
 
