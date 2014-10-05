@@ -32,7 +32,6 @@
 
     <job-runner id="runner" run-at-startup="true"
                 pre-action="setupScript"
-
                 job-ref="wordcountJob"/>
 
 </beans:beans>

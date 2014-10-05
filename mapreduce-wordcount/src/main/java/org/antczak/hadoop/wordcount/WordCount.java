@@ -8,7 +8,6 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
-import java.util.StringTokenizer;
 
 public class WordCount {
 
@@ -21,12 +20,8 @@ public class WordCount {
 
         public void map(Object key, Text value, Context context
         ) throws IOException, InterruptedException {
-            log.debug("key:" + key);
-            log.debug("value:" + value);
-            StringTokenizer itr = new StringTokenizer(value.toString());
-            while (itr.hasMoreTokens()) {
-                String token = itr.nextToken();
-                log.debug("token:" + token);
+            String[] tokens = value.toString().split(" ");
+            for (String token : tokens) {
                 word.set(token);
                 context.write(word, new IntWritable(1));
             }

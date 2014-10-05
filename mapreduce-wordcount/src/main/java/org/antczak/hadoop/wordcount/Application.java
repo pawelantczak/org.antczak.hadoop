@@ -25,9 +25,10 @@ public class Application {
     private static final Log log = LogFactory.getLog(Application.class);
 
     public static void main(String[] args) throws Exception {
+        log.info("Wordcount with HDFS Application Running");
         AbstractApplicationContext context = new ClassPathXmlApplicationContext(
                 "/application-context.xml", Application.class);
-        log.info("Wordcount with HDFS copy Application Running");
         context.registerShutdownHook();
+        log.info("Wordcount with HDFS Application Finished");
     }
 }
