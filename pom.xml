@@ -20,8 +20,9 @@
     </properties>
 
     <modules>
-        <module>wordcount</module>
-        <module>holidays-country</module>
+        <module>hive-holidays-sentiment</module>
+        <module>mapreduce-holidays-country</module>
+        <module>mapreduce-wordcount</module>
     </modules>
 
     <dependencies>
