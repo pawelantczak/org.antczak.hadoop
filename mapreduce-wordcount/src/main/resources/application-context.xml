@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans:beans xmlns="http://www.springframework.org/schema/hadoop"
+<beans:beans xmlns:hdp="http://www.springframework.org/schema/hadoop"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xmlns:beans="http://www.springframework.org/schema/beans"
              xmlns:context="http://www.springframework.org/schema/context"
@@ -9,29 +9,29 @@
 
     <context:property-placeholder location="hadoop.properties"/>
 
-    <configuration>
+    <hdp:configuration>
         fs.default.name=${hd.fs}
         mapred.job.tracker=${hd.jt}
         yarn.resourcemanager.address=${hd.rm}
         mapreduce.framework.name=${mr.fw}
         mapreduce.jobhistory.address=${mr.jh}
-    </configuration>
+    </hdp:configuration>
 
-    <job id="wordcountJob"
-         jar-by-class="org.antczak.hadoop.wordcount.WordCount"
-         input-path="${wordcount.input.path}"
-         output-path="${wordcount.output.path}"
-         mapper="org.antczak.hadoop.wordcount.WordCount.TokenizerMapper"
-         reducer="org.antczak.hadoop.wordcount.WordCount.IntSumReducer"/>
+    <hdp:job id="wordcountJob"
+             jar-by-class="org.antczak.hadoop.wordcount.WordCount"
+             input-path="${wordcount.input.path}"
+             output-path="${wordcount.output.path}"
+             mapper="org.antczak.hadoop.wordcount.WordCount.TokenizerMapper"
+             reducer="org.antczak.hadoop.wordcount.WordCount.IntSumReducer"/>
 
-    <script id="setupScript" location="copy-files.groovy">
-        <property name="localSourceFile" value="${basedir}/${localSourceFile}"/>
-        <property name="inputDir" value="${wordcount.input.path}"/>
-        <property name="outputDir" value="${wordcount.output.path}"/>
-    </script>
+    <hdp:script id="setupScript" location="copy-files.groovy">
+        <hdp:property name="localSourceFile" value="${basedir}/${localSourceFile}"/>
+        <hdp:property name="inputDir" value="${wordcount.input.path}"/>
+        <hdp:property name="outputDir" value="${wordcount.output.path}"/>
+    </hdp:script>
 
-    <job-runner id="runner" run-at-startup="true"
-                pre-action="setupScript"
-                job-ref="wordcountJob"/>
+    <hdp:job-runner id="runner" run-at-startup="true"
+                    pre-action="setupScript"
+                    job-ref="wordcountJob"/>
 
 </beans:beans>
