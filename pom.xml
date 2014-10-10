@@ -23,6 +23,7 @@
         <module>hive-holidays-sentiment</module>
         <module>mapreduce-holidays-country</module>
         <module>mapreduce-wordcount</module>
+        <module>mapreduce-holidays-aggregate</module>
     </modules>
 
     <dependencies>
