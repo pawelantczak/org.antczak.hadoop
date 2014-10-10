@@ -10,7 +10,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mapreduce-holidays</artifactId>
+    <artifactId>mapreduce-holidays-country</artifactId>
 
     <name>Holidays from Tweeter and HDFS</name>
 

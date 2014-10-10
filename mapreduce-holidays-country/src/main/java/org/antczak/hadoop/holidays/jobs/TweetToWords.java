@@ -24,9 +24,8 @@ public class TweetToWords {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        private Text word = new Text();
+        private Text line = new Text();
         private LongWritable id;
-        private boolean countryPresent;
 
         public void map(Object key, Text value, Context context
         ) throws IOException, InterruptedException {
@@ -39,26 +38,36 @@ public class TweetToWords {
                 id = new LongWritable(tweet.getId().longValue());
 
                 // Country?
-                countryPresent = false;
+                String countries = "";
                 for (String country : Countries.names) {
                     if (tweet.getText().indexOf(country) >= 0) {
-                        countryPresent = true;
-                        word.set(COUNTRY + country);
-                        context.write(id, word);
+                        if (countries.length() > 0) {
+                            countries = countries.concat(",").concat(country);
+                        } else {
+                            countries = countries.concat(country);
+                        }
                     }
                 }
 
-                if (countryPresent) {
+                String timeZone;
+                if (countries.length() > 0) {
                     // Keep Time zone
-                    word.set(TIMEZONE + tweet.getUser().getTime_zone());
-                    context.write(id, word);
+                    timeZone = tweet.getUser().getTime_zone();
 
                     // Word by word
                     StringTokenizer itr = new StringTokenizer(tweet.getText());
+                    StringBuilder stringBuilder;
+                    String token;
                     while (itr.hasMoreTokens()) {
-                        String token = itr.nextToken();
-                        word.set(token.replaceAll("[^a-zA-Z ]", ""));
-                        context.write(id, word);
+                        token = itr.nextToken();
+                        stringBuilder = new StringBuilder();
+                        stringBuilder.append(token.replaceAll("[^a-zA-Z ]", ""))
+                                .append("\t")
+                                .append(countries)
+                                .append("\t")
+                                .append(timeZone);
+                        line.set(stringBuilder.toString());
+                        context.write(id, line);
                     }
                 }
             } catch (Exception ex) {

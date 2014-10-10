@@ -19,21 +19,16 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.data.hadoop.hive.HiveRunner;
 
 public class Application {
 
     private static final Log log = LogFactory.getLog(Application.class);
 
     public static void main(String[] args) throws Exception {
+        log.info("Holidays with HDFS copy Application Running");
         AbstractApplicationContext context = new ClassPathXmlApplicationContext(
                 "/application-context.xml", Application.class);
-        log.info("Holidays with HDFS copy Application Running");
         context.registerShutdownHook();
-
-        //HiveRunner runner = context.getBean(HiveRunner.class);
-        //runner.call();
-
         context.close();
 
     }

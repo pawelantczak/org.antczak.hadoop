@@ -6,13 +6,11 @@ import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tweet {
     private String contributors;
-    private String coordinates;
     private String created_at;
     private Entities entities;
     private Number favorite_count;
     private boolean favorited;
     private String filter_level;
-    private String geo;
     private Number id;
     private String id_str;
     private String in_reply_to_screen_name;
@@ -21,7 +19,6 @@ public class Tweet {
     private String in_reply_to_user_id;
     private String in_reply_to_user_id_str;
     private String lang;
-    private String place;
     private boolean possibly_sensitive;
     private Number retweet_count;
     private boolean retweeted;
@@ -36,14 +33,6 @@ public class Tweet {
 
     public void setContributors(String contributors) {
         this.contributors = contributors;
-    }
-
-    public String getCoordinates() {
-        return this.coordinates;
-    }
-
-    public void setCoordinates(String coordinates) {
-        this.coordinates = coordinates;
     }
 
     public String getCreated_at() {
@@ -84,14 +73,6 @@ public class Tweet {
 
     public void setFilter_level(String filter_level) {
         this.filter_level = filter_level;
-    }
-
-    public String getGeo() {
-        return this.geo;
-    }
-
-    public void setGeo(String geo) {
-        this.geo = geo;
     }
 
     public Number getId() {
@@ -156,14 +137,6 @@ public class Tweet {
 
     public void setLang(String lang) {
         this.lang = lang;
-    }
-
-    public String getPlace() {
-        return this.place;
-    }
-
-    public void setPlace(String place) {
-        this.place = place;
     }
 
     public boolean getPossibly_sensitive() {
