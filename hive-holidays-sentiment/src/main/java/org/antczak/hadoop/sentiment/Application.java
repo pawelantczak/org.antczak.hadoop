@@ -6,9 +6,6 @@ import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import java.util.List;
-import java.util.Map;
-
 /**
  * Created by krr on 14.08.14.
  */
@@ -24,14 +21,18 @@ public class Application {
         context.registerShutdownHook();
 
         JdbcTemplate template = context.getBean(JdbcTemplate.class);
-        List<Map<String,Object>> tables = template.queryForList("select description from sample_08");
+        String dropTable = context.getBean("dropTable", String.class);
+        String createTable = context.getBean("createTable", String.class);
+        String joinSentiment = context.getBean("joinSentiment", String.class);
 
-        //HiveTemplate template = context.getBean(HiveTemplate.class);
-        //List<String> tables = template.query("select description from sample_08");
-        log.info(tables.size());
-        //for(String table : tables) {
-        //    log.info("table: " + table);
-        //}
+        log.info(dropTable);
+        template.execute(dropTable);
+
+        log.info(createTable);
+        template.execute(createTable);
+
+        log.info(joinSentiment);
+        template.execute(joinSentiment);
 
         context.close();
         log.info("Hive Application Completed");

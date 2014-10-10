@@ -16,11 +16,57 @@
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <property name="driver" ref="hiveDriver"/>
         <property name="url" value="${hive.url}"/>
-        <property name="username" value="hadoop"/>
     </bean>
 
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <bean id="dropTable" class="java.lang.String">
+        <constructor-arg>
+            <value>
+                DROP TABLE IF EXISTS tweetwords
+            </value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="createTable" class="java.lang.String">
+        <constructor-arg>
+            <value>
+                CREATE EXTERNAL TABLE tweetwords (
+                    id BIGINT
+                    ,word STRING
+                    ,countries STRING
+                    ,time_zone STRING
+                    )
+                ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+                STORED AS TEXTFILE
+                LOCATION '/user/krr/output/xd/holidays/words'
+            </value>
+        </constructor-arg>
+    </bean>
+
+    <bean id="joinSentiment" class="java.lang.String">
+        <constructor-arg>
+            <value>
+                INSERT OVERWRITE DIRECTORY '/user/krr/output/xd/holidays/sentiment'
+                SELECT id,
+                       countries,
+                       sum(sentiment) AS sentiment,
+                       country
+                FROM
+                  (SELECT t.id AS id,
+                          t.countries AS countries,
+                          COALESCE(d.sentiment, 0L) AS sentiment,
+                          z.country AS country
+                   FROM tweetwords t
+                   LEFT OUTER JOIN dict d ON d.word = t.word
+                   LEFT OUTER JOIN time_zone_map z ON z.time_zone = t.time_zone) s1
+                GROUP BY id,
+                         countries,
+                         country
+            </value>
+        </constructor-arg>
     </bean>
 
 </beans>
