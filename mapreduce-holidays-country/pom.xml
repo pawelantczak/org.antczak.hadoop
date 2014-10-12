@@ -167,9 +167,11 @@
                 <version>1.2.2</version>
                 <configuration>
                     <repositoryLayout>flat</repositoryLayout>
+                    <!--
                     <configurationSourceDirectory>src/main/config</configurationSourceDirectory>
                     <copyConfigurationDirectory>true</copyConfigurationDirectory>
-                   <!-- <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>-->
+                    -->
+                    <!-- <extraJvmArguments>-Dmr.fw=${mapreduce.framework}</extraJvmArguments>-->
                     <programs>
                         <program>
                             <mainClass>org.antczak.hadoop.holidays.Application</mainClass>

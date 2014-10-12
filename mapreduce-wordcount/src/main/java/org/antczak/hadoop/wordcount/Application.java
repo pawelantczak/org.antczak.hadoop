@@ -29,9 +29,11 @@ public class Application {
         log.info("Wordcount with HDFS Application Running");
 
         AbstractApplicationContext context = new ClassPathXmlApplicationContext(
-                "/application-context.xml", Application.class);
+            "/application-context.xml", Application.class);
 
         context.registerShutdownHook();
+
+        context.close();
 
         log.info("Wordcount with HDFS Application Finished");
     }

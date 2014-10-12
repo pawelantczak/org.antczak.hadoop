@@ -16,11 +16,10 @@ import java.util.StringTokenizer;
 public class TweetToWords {
 
     private static final Log log = LogFactory.getLog(TweetToWords.class);
-    private static final String COUNTRY = "token:country:";
-    private static final String TIMEZONE = "token:timeZone:";
+
 
     public static class TokenizerMapper
-            extends Mapper<Object, Text, LongWritable, Text> {
+        extends Mapper<Object, Text, LongWritable, Text> {
 
         ObjectMapper mapper = new ObjectMapper();
 
@@ -49,10 +48,10 @@ public class TweetToWords {
                     }
                 }
 
-                String timeZone;
+
                 if (countries.length() > 0) {
                     // Keep Time zone
-                    timeZone = tweet.getUser().getTime_zone();
+                    String timeZone = tweet.getUser().getTime_zone();
 
                     // Word by word
                     StringTokenizer itr = new StringTokenizer(tweet.getText());
@@ -62,10 +61,10 @@ public class TweetToWords {
                         token = itr.nextToken();
                         stringBuilder = new StringBuilder();
                         stringBuilder.append(token.replaceAll("[^a-zA-Z ]", ""))
-                                .append("\t")
-                                .append(countries)
-                                .append("\t")
-                                .append(timeZone);
+                            .append("\t")
+                            .append(countries)
+                            .append("\t")
+                            .append(timeZone);
                         line.set(stringBuilder.toString());
                         context.write(id, line);
                     }
@@ -78,15 +77,14 @@ public class TweetToWords {
     }
 
     public static class DummyReducer
-            extends Reducer<LongWritable, Text, LongWritable, Text> {
+        extends Reducer<LongWritable, Text, LongWritable, Text> {
 
         public void reduce(LongWritable id, Iterable<Text> values,
-                           Context context
+            Context context
         ) throws IOException, InterruptedException {
             for (Text value : values) {
                 context.write(id, value);
             }
-
         }
     }
 

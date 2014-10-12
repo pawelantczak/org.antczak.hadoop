@@ -3,9 +3,6 @@ package org.antczak.hadoop.holidays;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by krr on 11.08.14.
- */
 public class Countries {
     public static List<String> names = new ArrayList<String>();
 
@@ -266,6 +263,5 @@ public class Countries {
         names.add("Western Sahara");
         names.add("Yemen");
         names.add("Zambia");
-
     }
 }
