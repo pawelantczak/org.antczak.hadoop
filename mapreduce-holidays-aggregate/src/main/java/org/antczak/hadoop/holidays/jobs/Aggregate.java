@@ -13,8 +13,9 @@ public class Aggregate {
 
     private static final Log log = LogFactory.getLog(Aggregate.class);
 
+
     public static class TokenizerMapper
-            extends Mapper<Object, Text, Text, IntWritable> {
+        extends Mapper<Object, Text, Text, IntWritable> {
 
         private Text line = new Text();
         private StringBuilder sb;
@@ -29,8 +30,8 @@ public class Aggregate {
             for (String country : countries) {
                 sb = new StringBuilder();
                 sb.append(from)
-                        .append(" -> ")
-                        .append(country);
+                    .append(" -> ")
+                    .append(country);
                 line.set(sb.toString());
                 context.write(line, new IntWritable(Integer.valueOf(columns[2])));
             }
@@ -38,14 +39,15 @@ public class Aggregate {
         }
     }
 
+
     public static class DummyReducer
-            extends Reducer<Text, IntWritable, Text, Text> {
+        extends Reducer<Text, IntWritable, Text, Text> {
 
         private Text result = new Text();
         private StringBuilder sb;
 
         public void reduce(Text key, Iterable<IntWritable> values,
-                           Context context
+            Context context
         ) throws IOException, InterruptedException {
             int sum = 0;
             int pos = 0;
@@ -53,22 +55,21 @@ public class Aggregate {
             sb = new StringBuilder();
 
             for (IntWritable val : values) {
-                switch (val.get()) {
-                    case 1:
-                        pos++;
-                        break;
-                    case -1:
-                        neg++;
+                if (val.get() > 0) {
+                    pos++;
+                }
+                if (val.get() < 0) {
+                    neg++;
                 }
                 sum++;
             }
 
             sb.append("All: ").
-                    append(sum)
-                    .append(", positive: ")
-                    .append(pos)
-                    .append(", negative: ")
-                    .append(neg);
+                append(sum)
+                .append(", positive: ")
+                .append(pos)
+                .append(", negative: ")
+                .append(neg);
             result.set(sb.toString());
             context.write(key, result);
         }
